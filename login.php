@@ -4,7 +4,7 @@ session_start();
 $username = $_POST['username'] ?? '';
 $password = $_POST['password'] ?? '';
 
-if($username == "YOUR_USERNAME" && $password == "YOUR_PASSWORD"){
+if($username == "admin" && $password == "1475"){
     $_SESSION['user'] = $username;
     $_SESSION['role'] = 'admin';
     header("Location: dashboard.php");
